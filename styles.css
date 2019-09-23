@@ -10,145 +10,176 @@
 
 header {
   position: absolute; 
-  display: flex;
-  height: 112px;
-  align-items: center;
-  max-width: 1020px;
-  margin-left: auto;
-  margin-right: auto;
   left: 0;
   right: 0;
-}
-.container {  
+
+  display: flex;  
+  max-width: 1020px;
+  height: 112px;
+  align-items: center;
   margin: 0 auto; 
+}
+
+.container {  
   max-width: 1020px;
   width: 100%; 
+  margin: 0 auto; 
 }
+
 .logo {
   margin-top: 27px;
   margin-left: -1px;
 }
+
 h1 {
   margin-left: 3px;  
   margin-top: 38px;
-  text-transform: uppercase;
-  font-size: 41px;
-  letter-spacing: 0.4px;
-  color: #ffffff;
+
   font-family: "Lucida Sans", sans-serif;
-  font-style: italic;
+  font-style: italic;  
+  font-size: 41px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;  
   text-align: center;
+  color: #ffffff;
+  
   box-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
 }
-nav {
-  width: 453px;
-  height: 41px;
-  background-color: #f5c505;
-  align-self: flex-end;
-  margin-left: auto;
+
+nav {  
   display: flex;
-  justify-content: stretch;
+  width: 453px;
+  height: 41px;    
+  margin-left: auto;
+  align-self: flex-end;  
+
+  background-color: #f5c505;
   box-shadow: -4px -5px 0px 0px rgba(231,166,26,0.27), -8px -8px 0px 0px rgba(231,166,26,0.27);
  }
  
- .button-about li:before {
-  display: inline-block;
+ .button-about li:before {  
   content:"";
+  
   position: relative;
   top: 3px;
   right: 1px;
+  
+  display: inline-block;  
   margin-right: 10px;
-  background-image: url('./assets/img/about.svg');
   width: 20px;
   height: 20px;
+  
+  background-image: url('./assets/img/about.svg');  
 }
+
 .button-services li:before {
-  display: inline-block;
   content:"";
+
   position: relative;
   top: 3px;
-  margin-right: 8px;
-  background-image: url('./assets/img/services.svg');
+  
+  display: inline-block;
   width: 20px;
   height: 20px;
+  margin-right: 8px;
+
+  background-image: url('./assets/img/services.svg');  
 }
+
 .button-contact li:before {
-  display: inline-block;
   content:"";
+
   position: relative;
   top: 3px;
-  margin-right: 8px;
-  background-image: url('./assets/img/contacts.svg');
+
+  display: inline-block;
   width: 25px;
   height: 20px;
+  margin-right: 8px;
+
+  background-image: url('./assets/img/contacts.svg');  
 }
+
 .button-about li {    
   margin-left: 17px;
   margin-bottom: 5px;
 }
+
 .button-services li {    
   margin-left: -6px;
   margin-bottom: 5px;
 }
+
 .button-contact li {    
   margin-left: -7px;
   margin-bottom: 5px;
 }
+
 .button-about {
   flex: 1.29;
 }
+
 .button-services {
   flex: 1;
 }
+
 .button-contact {
   flex: 1.1;
 }
+
 nav a {  
-  height: 100%;
   display: flex;
+  height: 100%;
   align-items: center;
   justify-content: center;
+
+  font-family: "Segoe WP";
   font-size: 17px;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 0px;
-  color: #9b7d08;
-  font-family: "Segoe WP";
-  font-weight: 500;
+  letter-spacing: 0px;  
   text-align: center;  
+  color: #9b7d08;
+  
   border-right: 1px solid #b99403;
 }
+
 nav ul {
   display: flex;
   width: 100%;
 }
-nav li {
-  display: inline-block;
-}
 
 .top {
   height: 566px;
+
   background-image: url(./assets/img/main.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .icon-area {
   height: 212px;
+
   background-image: url(./assets/img/icon-section.png);
   background-size: cover;
   background-repeat: no-repeat;  
 }
+
 .section-1 {
   height: 508px;
 }
+
 .section-2 {
   height: 499px;
+
   background-image: url(./assets/img/section-2.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 footer {
   height: 64px;
+  
   background-image: url(./assets/img/footer.png);
   background-size: cover;
   background-repeat: no-repeat;
