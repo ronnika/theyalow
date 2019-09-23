@@ -1,5 +1,50 @@
+@font-face {
+  font-family: 'Lucida Sans';
+  font-style: italic;
+  src:  url('./assets/fonts/LucidaSansItalic.ttf') format('truetype');
+}
+
 header {
-  position: absolute;
+  position: absolute; 
+  display: flex;
+  height: 112px;
+  align-items: center;
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.container {  
+  margin: 0 auto; 
+  max-width: 1020px;
+  width: 100%; 
+}
+.logo {
+  margin-top: 27px;
+  margin-left: -1px;
+}
+h1 {
+  margin-left: 3px;  
+  margin-top: 38px;
+  text-transform: uppercase;
+  font-size: 41px;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  font-family: "Lucida Sans", sans-serif;
+  font-style: italic;
+  text-align: center;
+  box-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+}
+nav {
+  width: 453px;
+  height: 41px;
+  background-color: #f5c505;
+  align-self: flex-end;
+  margin-left: auto;
+}
+nav li {
+  display: inline-block;
 }
 .top {
   height: 566px;
