@@ -322,6 +322,10 @@ margin-right: 18px;
 
 .section-1 {
   height: 508px;
+
+  background-image: url(./assets/img/section-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section-2 {
