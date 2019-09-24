@@ -191,6 +191,34 @@ color: #ffffff;
 margin-right: 14px;  
 }
 
+.next {
+  position: absolute;
+  top: 300px;
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+
+}
+
+.next div {
+  width: 32px;
+  height: 57px;
+  background-color: #f5c506;
+}
+
+.next-left {  
+  background-image: url('./assets/img/left.svg');
+  background-repeat: no-repeat;
+  background-position: 8px  18px;
+}
+
+.next-right { 
+  background-image: url('./assets/img/right.svg');
+  background-repeat: no-repeat;
+  background-position: 11px 18px;
+}
+
 .icon-area {
   height: 212px;
 
