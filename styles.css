@@ -149,7 +149,15 @@ nav a {
   text-align: center;  
   color: #9b7d08;
   
-  border-right: 1px solid #b99403;
+  border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+nav a:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+
+nav a:active {  
+  background-color: rgba(0,0,0,0.11);
 }
 
 nav ul {
@@ -204,7 +212,14 @@ margin-right: 14px;
 .next div {
   width: 32px;
   height: 57px;
-  background-color: #f5c506;
+  background-color: rgba(245, 197, 6, 0.71);;
+}
+
+.next div:hover {
+  background-color: rgba(245, 197, 6, 0.81);;
+}
+.next div:active {
+  background-color: rgba(245, 197, 6, 1);;
 }
 
 .next-left {  
