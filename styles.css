@@ -8,9 +8,15 @@
   font-family: 'Segoe WP';
   src:  url('./assets/fonts/SegoeWP.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'Asap';
   src:  url('./assets/fonts/Asap-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Segoe UI Light';
+  src:  url('./assets/fonts/SegoeUILight.ttf') format('truetype');
 }
 
 header {
@@ -26,9 +32,6 @@ header {
 }
 
 .container {  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   max-width: 1020px;
   width: 100%; 
   margin: 0 auto; 
@@ -51,7 +54,9 @@ h1 {
   text-align: center;
   color: #ffffff;
   
-  box-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+  -webkit-box-shadow: 1px 1.732px 0px rgba( 0, 0, 0, 0.42);
+  -moz-box-shadow: 1px 1.732px 0px rgba( 0, 0, 0, 0.42);
+  box-shadow: 1px 1.732px 0px rgba( 0, 0, 0, 0.42);
 }
 
 nav {  
@@ -62,6 +67,8 @@ nav {
   align-self: flex-end;  
 
   background-color: #f5c505;
+  -webkit-box-shadow: -4px -5px 0px 0px rgba(231,166,26,0.27), -8px -8px 0px 0px rgba(231,166,26,0.27);
+  -moz-box-shadow: -4px -5px 0px 0px rgba(231,166,26,0.27), -8px -8px 0px 0px rgba(231,166,26,0.27);
   box-shadow: -4px -5px 0px 0px rgba(231,166,26,0.27), -8px -8px 0px 0px rgba(231,166,26,0.27);
  }
  
@@ -165,6 +172,12 @@ nav ul {
   width: 100%;
 }
 
+.top .container {  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .top {  
   display: flex;
   height: 566px;
@@ -183,7 +196,7 @@ h2 {
   margin-top: 67px;
   font-family: "Asap";
   font-size: 63px;
-  letter-spacing: 1px;  
+  letter-spacing: 0.6px;  
   text-align: center; 
   text-transform: uppercase;
   line-height: 4.8rem;
@@ -191,12 +204,12 @@ h2 {
 
 .orange-text {
  color: #f5c506; 
- margin-right: 31px;  
+ margin-right: 37px;  
 }
 
 .white-text {
 color: #ffffff;    
-margin-right: 14px;  
+margin-right: 18px;  
 }
 
 .next {
@@ -240,7 +253,72 @@ margin-right: 14px;
   background-image: url(./assets/img/icon-section.png);
   background-size: cover;
   background-repeat: no-repeat;  
+
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
 }
+
+.icon-area .container {  
+  display: flex;
+  height: 100%;
+  
+  font-family: "Segoe UI Light";
+  font-size: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.icon-design,
+.icon-customize,
+.icon-free {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  border-left: 1px solid rgba( 0, 0, 0, 0.14);
+}
+
+.icon-free {
+  border-right: 1px solid rgba( 0, 0, 0, 0.14);
+}
+
+.icon-design img {
+  margin-right: 6px;
+}
+
+.icon-customize img {
+  margin-bottom: 4px;
+  margin-left: 22px;
+}
+
+.icon-free img {
+  margin-bottom: -1px;
+  margin-right: 21px;
+}
+.icon-text {  
+  margin-top: 14px;
+  margin-bottom: 35px;
+}
+.icon-design .icon-text {
+  margin-bottom: 36px;
+  margin-left: 17px;
+
+  letter-spacing: 0.4px;
+}
+.icon-customize .icon-text {
+ margin-left: 19px;
+
+ letter-spacing: 0px;
+}
+.icon-free .icon-text {
+  margin-right: 16px;
+
+  letter-spacing: 0.3px;
+ }
 
 .section-1 {
   height: 508px;
