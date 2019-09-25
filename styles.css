@@ -1,32 +1,51 @@
 @font-face {
-  font-family: 'Lucida Sans';
+  font-family: "Lucida Sans";
   font-style: italic;
-  src:  url('./assets/fonts/LucidaSansItalic.ttf') format('truetype');
+  src:  url("./assets/fonts/LucidaSansItalic.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Segoe WP';
-  src:  url('./assets/fonts/SegoeWP.ttf') format('truetype');
+  font-family: "Segoe WP";
+  font-weight: 400;
+  src:  url("./assets/fonts/SegoeWP.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Asap';
-  src:  url('./assets/fonts/Asap-Regular.otf') format('opentype');
+  font-family: "Segoe WP";
+  font-weight: 300;
+  src:  url("./assets/fonts/SegoeWPLight.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Segoe UI Light';
-  src:  url('./assets/fonts/SegoeUILight.ttf') format('truetype');
+  font-family: "Asap";
+  src:  url("./assets/fonts/Asap-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'PT Sans';
-  src:  url('./assets/fonts/PTS55F.ttf') format('truetype');
+  font-family: "Segoe UI Regular";
+  src:  url("./assets/fonts/segoe-ui.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src:  url('./assets/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-family: "Segoe UI";
+  font-weight: light;
+  src:  url("./assets/fonts/SegoeUILight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  src:  url("./assets/fonts/SegoeUIBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src:  url("./assets/fonts/PTS55F.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:  url("./assets/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
 header {
@@ -94,7 +113,7 @@ nav {
   width: 20px;
   height: 20px;
   
-  background-image: url('./assets/img/about.svg');  
+  background-image: url("./assets/img/about.svg");  
 }
 
 .button-services li:before {
@@ -108,7 +127,7 @@ nav {
   height: 20px;
   margin-right: 8px;
 
-  background-image: url('./assets/img/services.svg');  
+  background-image: url("./assets/img/services.svg");  
 }
 
 .button-contact li:before {
@@ -122,7 +141,7 @@ nav {
   height: 20px;
   margin-right: 8px;
 
-  background-image: url('./assets/img/contacts.svg');  
+  background-image: url("./assets/img/contacts.svg");  
 }
 
 .button-about li {    
@@ -191,6 +210,7 @@ nav ul {
 .top {  
   display: flex;
   height: 566px;
+  width: 100vw;
   background-image: url(./assets/img/main.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -246,19 +266,20 @@ margin-right: 18px;
 }
 
 .next-left {  
-  background-image: url('./assets/img/left.svg');
+  background-image: url("./assets/img/left.svg");
   background-repeat: no-repeat;
-  background-position: 8px  18px;
+  background-position: 8px  19px;
 }
 
 .next-right { 
-  background-image: url('./assets/img/right.svg');
+  background-image: url("./assets/img/right.svg");
   background-repeat: no-repeat;
   background-position: 11px 18px;
 }
 
 .icon-area {
   height: 212px;
+  width: 100vw;
 
   background-image: url(./assets/img/icon-section.png);
   background-size: cover;
@@ -273,7 +294,8 @@ margin-right: 18px;
   display: flex;
   height: 100%;
   
-  font-family: "Segoe UI Light";
+  font-family: "Segoe UI";
+  font-weight: light;
   font-size: 27px;
   text-align: center;
   text-transform: uppercase;
@@ -332,15 +354,138 @@ margin-right: 18px;
 
 .section-1 {
   height: 508px;
+  width: 100vw;
+  display: flex;
 
   background-image: url(./assets/img/section-1.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.section-1 h2 {
+  flex-basis: 100%;
+  height: 93px;
+  justify-self: flex-start;
+  text-align: left;
+  margin-top: 17px;
+  float: left;
+  font-size: 37px;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  font-family: "PT Sans";  
+}
+
+.section-1 .container {
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.date-vid-box {
+  display: flex;  
+  margin-left: -1px;
+  flex-direction: column;  
+  align-self: flex-start;
+}
+
+.plus {
+  position: relative;
+  height: 12px;
+  width: 15px;
+  background-image: url("./assets/img/plus.svg");
+  background-repeat: no-repeat;
+}
+
+.plus-1 {
+  left: 315px;
+  top: 208px;
+}
+
+.plus-2 {
+  left: 308px;
+  top: 208px;
+}
+
+.plus:hover,
+.plus:active {
+  background-image: url("./assets/img/plus.svg"),url("./assets/img/plus.svg");
+}
+
+.video-box {
+  display: flex;
+  justify-content: space-between;  
+
+  width: 656px;
+  height: 233px;
+  background-color: #ec9e03;
+}
+
+.video-box p {
+  width:330px;
+  padding: 15px 18px;
+
+  font-size: 29px;
+  letter-spacing: 0.3px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: "Segoe WP";
+  font-weight: 300;
+}
+.video-box video {
+  display: inline-block;
+  margin-top: -1px;
+}
+
+.date-box {
+  box-sizing: border-box;
+  align-self: flex-start;
+  padding-top: 12px;
+  padding-left: 7px;
+  text-align: center;
+  
+  height: 86px;
+  width: 113px;
+  background-color: #ddb101;
+}
+
+.date-box .day {
+  
+  font-size: 51px;
+  letter-spacing: 1px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: "Segoe UI";  
+  font-weight: bold;
+}
+
+.date-box .month {
+  margin-right: 2px;
+  font-size: 21px;
+  letter-spacing: 0.4px;
+  line-height: 38px;
+  color: #b26529;
+  font-family: "Segoe UI Regular";
+  text-transform: uppercase;
+}
+.twitter-box {
+  
+  margin-right: 2px;
+  width: 329px;
+  height: 233px;
+  background-image: url("./assets/img/twitter.svg");
+  background-repeat: no-repeat;
+  background-position-y: 59%;
+  background-position-x: 49%;
+  
+  background-color: #ec9e03;
+}
+
 .section-2 {  
   display: flex;
   height: 497px;
+  width: 100vw;
 
   background-image: url(./assets/img/section-2.png);
   background-size: cover;
@@ -400,6 +545,7 @@ figure {
 
 footer {
   height: 64px;
+  width: 100vw;
 
   background-image: url(./assets/img/footer.png);
   background-size: cover;
