@@ -1,3 +1,4 @@
+/*  */
 @font-face {
   font-family: "Lucida Sans";
   font-style: italic;
@@ -48,6 +49,14 @@
   src:  url("./assets/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
+/* Container for all sections */
+.container {   
+  max-width: 1020px;
+  width: 100%; 
+  margin: 0 auto; 
+} 
+
+/* --- Header --- */
 header {
   position: absolute; 
   left: 0;
@@ -60,12 +69,6 @@ header {
   margin: 0 auto; 
 }
 
-.container {  
-  max-width: 1020px;
-  width: 100%; 
-  margin: 0 auto; 
-}
-
 .logo {
   margin-top: 27px;
   margin-left: -1px;
@@ -75,7 +78,7 @@ h1 {
   margin-left: 3px;  
   margin-top: 38px;
 
-  font-family: "Lucida Sans", sans-serif;
+  font-family: "Lucida Sans", "Tahoma", sans-serif;
   font-style: italic;  
   font-size: 41px;
   text-transform: uppercase;
@@ -88,6 +91,7 @@ h1 {
   box-shadow: 1px 1.732px 0px rgba( 0, 0, 0, 0.42);
 }
 
+/* --- Navigation --- */
 nav {  
   display: flex;
   width: 453px;
@@ -100,7 +104,13 @@ nav {
   -moz-box-shadow: -4px -5px 0px 0px rgba(231,166,26,0.27), -8px -8px 0px 0px rgba(231,166,26,0.27);
   box-shadow: -4px -5px 0px 0px rgba(231,166,26,0.27), -8px -8px 0px 0px rgba(231,166,26,0.27);
  }
- 
+  
+nav ul {
+  display: flex;
+  width: 100%;
+}
+
+ /* Icons for nav buttons */
  .button-about li:before {  
   content:"";
   
@@ -144,6 +154,7 @@ nav {
   background-image: url("./assets/img/contacts.svg");  
 }
 
+/* Line up content of navbar */
 .button-about li {    
   margin-left: 17px;
   margin-bottom: 5px;
@@ -159,6 +170,7 @@ nav {
   margin-bottom: 5px;
 }
 
+/* Width of the navbar buttons */
 .button-about {
   flex: 1.29;
 }
@@ -171,13 +183,14 @@ nav {
   flex: 1.1;
 }
 
+/* Navbar links */
 nav a {  
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: center;
 
-  font-family: "Segoe WP";
+  font-family: "Segoe WP", "Tahoma", sans-serif;
   font-size: 17px;
   text-transform: uppercase;
   text-decoration: none;
@@ -188,6 +201,7 @@ nav a {
   border-right: 1px solid rgba(0,0,0,0.1);
 }
 
+/* Interactive navbar elements */
 nav a:hover {
   background-color: rgba(0,0,0,0.05);
 }
@@ -196,11 +210,7 @@ nav a:active {
   background-color: rgba(0,0,0,0.11);
 }
 
-nav ul {
-  display: flex;
-  width: 100%;
-}
-
+/* --- Top section --- */
 .top .container {  
   display: flex;
   justify-content: space-between;
@@ -216,15 +226,17 @@ nav ul {
   background-repeat: no-repeat;
 }
 
+/* Video element */
 .main-video {
   padding:  0 10px;
   margin-top: 97px;
   max-width: 549px;
 }
 
+/* Large heading beside the video */
 h2 {  
   margin-top: 67px;
-  font-family: "Asap";
+  font-family: "Asap", "Tahoma", sans-serif;
   font-size: 63px;
   letter-spacing: 0.6px;  
   text-align: center; 
@@ -242,80 +254,86 @@ color: #ffffff;
 margin-right: 18px;  
 }
 
-.next {
+/* Arrow buttons both on the left and right */
+.button-next {
   position: absolute;
   top: 300px;
   width: 100%
 }
 
-.next div {
+.button-next div {
   width: 32px;
   height: 57px;
   background-color: rgba(245, 197, 6, 0.71);;
 }
 
-.next div:hover {
+.button-next div:hover {
   background-color: rgba(245, 197, 6, 0.81);;
 }
-.next div:active {
+.button-next div:active {
   background-color: rgba(245, 197, 6, 1);;
 }
 
-.next-left {  
+/* Arrow buttons left / right */
+.button-next-left {  
   float: left;
   background-image: url("./assets/img/left.svg");
   background-repeat: no-repeat;
   background-position: 8px  19px;
 }
 
-.next-right {
+.button-next-right {
   float: right; 
   background-image: url("./assets/img/right.svg");
   background-repeat: no-repeat;
   background-position: 11px 18px;
 }
 
+/* --- Icon Area --- */
+
+.icon-area .container {  
+  display: flex;
+  height: 100%;  
+}
+
 .icon-area {
   height: 212px;
   width: 100%;
 
-  background-image: url(./assets/img/icon-section.png);
+  background-image: url(./assets/img/icon-section.png); /* Background of the section */
   background-size: cover;
   background-repeat: no-repeat;  
-
+  
   -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
 }
 
-.icon-area .container {  
-  display: flex;
+.icon-design,
+.icon-customize,
+.icon-free {
+  display: flex;  
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   height: 100%;
-  
-  font-family: "Segoe UI";
+  width: 100%;  
+
+  font-family: "Segoe UI", "Tahoma", sans-serif;
   font-weight: light;
   font-size: 27px;
   text-align: center;
   text-transform: uppercase;
-}
 
-.icon-design,
-.icon-customize,
-.icon-free {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  flex: 1;
-  height: 100%;
-  width: 100%;
-  border-left: 1px solid rgba( 0, 0, 0, 0.14);
+  border-left: 1px solid rgba( 0, 0, 0, 0.14); /* Add vertical lines between navbar sections */
 }
 
 .icon-free {
-  border-right: 1px solid rgba( 0, 0, 0, 0.14);
+  border-right: 1px solid rgba( 0, 0, 0, 0.14); /* Add missing line on the right */
 }
 
+/* Align icons */
 .icon-design img {
   margin-right: 6px;
 }
@@ -329,6 +347,8 @@ margin-right: 18px;
   margin-bottom: -1px;
   margin-right: 21px;
 }
+
+/* Align text under icons*/
 .icon-text {  
   margin-top: 14px;
   margin-bottom: 35px;
@@ -340,9 +360,9 @@ margin-right: 18px;
   letter-spacing: 0.4px;
 }
 .icon-customize .icon-text {
- margin-left: 19px;
+  margin-left: 19px;
 
- letter-spacing: 0px;
+  letter-spacing: 0px;
 }
 .icon-free .icon-text {
   margin-right: 16px;
@@ -350,17 +370,25 @@ margin-right: 18px;
   letter-spacing: 0.3px;
  }
 
-.section-1 {
-  height: 508px;
-  width: 100%;
-  display: flex;
+ /* --- Yellow Section --- */
+ .yellow-section .container {
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
 
-  background-image: url(./assets/img/section-1.png);
+.yellow-section {  
+  display: flex;
+  height: 508px;
+  min-width: 100%;
+
+  background-image: url("./assets/img/section-1.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.section-1 h2 {
+.yellow-section h2 {
   flex-basis: 100%;
   height: 93px;
   justify-self: flex-start;
@@ -370,17 +398,10 @@ margin-right: 18px;
   font-size: 37px;
   letter-spacing: 0.4px;
   color: #ffffff;
-  font-family: "PT Sans";  
+  font-family: "PT Sans", "Tahoma", sans-serif;  
 }
 
-.section-1 .container {
-  display: flex;
-  
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: flex-start;
-}
-
+/* Left box with date */
 .date-vid-box {
   display: flex;  
   margin-left: -1px;
@@ -388,6 +409,92 @@ margin-right: 18px;
   align-self: flex-start;
 }
 
+.video-box {
+  display: flex;
+  justify-content: space-between;
+  width: 656px;
+  height: 233px;
+
+  background-color: #ec9e03;
+}
+
+.video-box p {
+  width:330px;
+  padding: 15px 18px;
+
+  font-family: "Segoe WP", "Tahoma", sans-serif;  
+  font-size: 29px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  line-height: 38px;
+  color: #ffffff;
+}
+
+.video-box video {
+  display: inline-block;
+  margin-top: -1px;  
+}
+
+/* Date Box*/
+.date-box {
+  box-sizing: border-box;  
+  padding-top: 12px;
+  padding-left: 7px;
+  align-self: flex-start;
+  text-align: center;  
+  height: 86px;
+  width: 113px;
+
+  background-color: #ddb101;
+}
+
+.date-box .day {  
+  font-family: "Segoe UI", "Tahoma", sans-serif;  
+  font-size: 51px;  
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 38px;
+  color: #ffffff;
+}
+
+.date-box .month {
+  margin-right: 2px;
+  
+  font-family: "Segoe UI Regular", "Tahoma", sans-serif;
+  font-size: 21px;
+  letter-spacing: 0.4px;
+  line-height: 38px;  
+  text-transform: uppercase;
+  color: #b26529;
+}
+
+/* Right box with Twitter logo */
+.twitter-box {  
+  width: 329px;
+  height: 233px;
+  margin-right: 2px;
+
+  background-color: #ec9e03;
+  background-image: url("./assets/img/twitter.svg");
+  background-repeat: no-repeat;
+  background-position-y: 59%;
+  background-position-x: 49%;  
+}
+
+.twitter-count {
+  position: relative;
+  top: 9px;
+  left: 285px;
+
+  font-family: "Segoe WP", "Tahoma", sans-serif;
+  font-size: 25px;  
+  font-weight: 300;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #ffffff;
+}
+
+/* Plus buttons */
 .plus {
   position: relative;
   height: 12px;
@@ -396,12 +503,12 @@ margin-right: 18px;
   background-repeat: no-repeat;
 }
 
-.plus-1 {
+.plus-video {
   left: 315px;
   top: 208px;
 }
 
-.plus-2 {
+.plus-twitter {
   left: 308px;
   top: 170px;
 }
@@ -411,89 +518,11 @@ margin-right: 18px;
   background-image: url("./assets/img/plus.svg"),url("./assets/img/plus.svg");
 }
 
-.video-box {
-  display: flex;
-  justify-content: space-between;  
-
-  width: 656px;
-  height: 233px;
-  background-color: #ec9e03;
-}
-
-.video-box p {
-  width:330px;
-  padding: 15px 18px;
-
-  font-size: 29px;
-  letter-spacing: 0.3px;
-  line-height: 38px;
-  color: #ffffff;
-  font-family: "Segoe WP";
-  font-weight: 300;
-}
-.video-box video {
-  display: inline-block;
-  margin-top: -1px;
-}
-
-.date-box {
-  box-sizing: border-box;
-  align-self: flex-start;
-  padding-top: 12px;
-  padding-left: 7px;
-  text-align: center;
-  
-  height: 86px;
-  width: 113px;
-  background-color: #ddb101;
-}
-
-.date-box .day {
-  
-  font-size: 51px;
-  letter-spacing: 1px;
-  line-height: 38px;
-  color: #ffffff;
-  font-family: "Segoe UI";  
-  font-weight: bold;
-}
-
-.date-box .month {
-  margin-right: 2px;
-  font-size: 21px;
-  letter-spacing: 0.4px;
-  line-height: 38px;
-  color: #b26529;
-  font-family: "Segoe UI Regular";
-  text-transform: uppercase;
-}
-.twitter-box {
-  
-  margin-right: 2px;
-  width: 329px;
-  height: 233px;
-  background-image: url("./assets/img/twitter.svg");
-  background-repeat: no-repeat;
-  background-position-y: 59%;
-  background-position-x: 49%;
-  
-  background-color: #ec9e03;
-}
-.twitter-count {
-  position: relative;
-  top: 9px;
-  left: 285px;
-  font-size: 25px;
-  letter-spacing: 0px;
-  line-height: 38px;
-  color: #ffffff;
-  font-family: "Segoe WP";
-  font-weight: 300;
-}
-
+/* Slider */
 .slider {
-  flex-basis: 100%;
+  flex-basis: 100%; 
 }
+
 .slider-white {
   margin-left: 73px;
   margin-top: 43px;
@@ -502,6 +531,7 @@ margin-right: 18px;
   background-color: rgba(259, 256, 256, 0.48);
   border-radius: 7px;
 }
+
 .slider-orange {
   margin-left: 247px;
   width: 21.9%;
@@ -509,7 +539,9 @@ margin-right: 18px;
   background-color: #ec9e03;
   border-radius: 7px;
 }
-.section-2 {  
+
+/* --- Grey section with list --- */
+.grey-section {  
   display: flex;
   height: 497px;
   width: 100%;
@@ -519,37 +551,7 @@ margin-right: 18px;
   background-repeat: no-repeat;
 }
 
-.section-2 ul {
-  position: relative;
-  top: 58px;
-  right: 1px;
-  float: right;
-  width: 360px;
-  
-
-  list-style-image: url("./assets/img/dot.svg");
-
-  font-size: 22px;
-  letter-spacing: 0px;
-  color: #a9a9a7;
-  font-family: "Open Sans";
-}
-
-.section-2 li {
-  padding-left: 13px;
-  padding-top: 20px;
-  line-height: 1.2em;
-}
-.section-2 h2 {
-  width: 100%;
-  margin-top: 26px;
-  margin-left: 2px;
-  font-size: 43px;
-  letter-spacing: 0.5px;
-  color: #f5c506;
-  font-family: "PT Sans";
-}
-
+/* Picture of Computer and etc. */
 figure {
   display: block;
   float: left;
@@ -570,6 +572,42 @@ figure {
   margin-left: 21px;  
 }
 
+/* List */
+.grey-section ul {
+  position: relative;
+  top: 58px;
+  right: 1px;
+
+  float: right;
+  width: 360px;
+  
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 22px;
+  letter-spacing: 0px;
+  color: #a9a9a7;
+
+  list-style-image: url("./assets/img/dot.svg");  
+}
+
+.grey-section li {
+  padding-left: 13px;
+  padding-top: 20px;
+
+  line-height: 1.2em;
+}
+
+.grey-section h2 {
+  width: 100%;
+  margin-top: 26px;
+  margin-left: 2px;
+
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 43px;
+  letter-spacing: 0.5px;
+  color: #f5c506;
+}
+
+/*  --- Footer with Logo --- */
 footer {
   height: 64px;
   width: 100%;
@@ -592,12 +630,13 @@ footer .container {
   margin-top: 5px;
   margin-left: -1px;
 }
+
 .footer-logo+h3 {  
   display: inline-block;
   margin-top: 5px;
   margin-left: 4px;
 
-  font-family: "Lucida Sans", sans-serif;
+  font-family: "Lucida Sans", "Tahoma", sans-serif;
   font-style: italic;  
   font-size: 29px;
   text-transform: uppercase;
