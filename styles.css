@@ -210,7 +210,7 @@ nav ul {
 .top {  
   display: flex;
   height: 566px;
-  width: 100vw;
+  min-width: 100%;
   background-image: url(./assets/img/main.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -245,11 +245,7 @@ margin-right: 18px;
 .next {
   position: absolute;
   top: 300px;
-  display: flex;
-  width: 100%;
-
-  justify-content: space-between;
-
+  width: 100%
 }
 
 .next div {
@@ -266,12 +262,14 @@ margin-right: 18px;
 }
 
 .next-left {  
+  float: left;
   background-image: url("./assets/img/left.svg");
   background-repeat: no-repeat;
   background-position: 8px  19px;
 }
 
-.next-right { 
+.next-right {
+  float: right; 
   background-image: url("./assets/img/right.svg");
   background-repeat: no-repeat;
   background-position: 11px 18px;
@@ -279,7 +277,7 @@ margin-right: 18px;
 
 .icon-area {
   height: 212px;
-  width: 100vw;
+  width: 100%;
 
   background-image: url(./assets/img/icon-section.png);
   background-size: cover;
@@ -354,7 +352,7 @@ margin-right: 18px;
 
 .section-1 {
   height: 508px;
-  width: 100vw;
+  width: 100%;
   display: flex;
 
   background-image: url(./assets/img/section-1.png);
@@ -405,7 +403,7 @@ margin-right: 18px;
 
 .plus-2 {
   left: 308px;
-  top: 208px;
+  top: 170px;
 }
 
 .plus:hover,
@@ -481,11 +479,40 @@ margin-right: 18px;
   
   background-color: #ec9e03;
 }
+.twitter-count {
+  position: relative;
+  top: 9px;
+  left: 285px;
+  font-size: 25px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: "Segoe WP";
+  font-weight: 300;
+}
 
+.slider {
+  flex-basis: 100%;
+}
+.slider-white {
+  margin-left: 73px;
+  margin-top: 43px;
+  width: 87.8%;
+  height: 15px;
+  background-color: rgba(259, 256, 256, 0.48);
+  border-radius: 7px;
+}
+.slider-orange {
+  margin-left: 247px;
+  width: 21.9%;
+  height: 100%;
+  background-color: #ec9e03;
+  border-radius: 7px;
+}
 .section-2 {  
   display: flex;
   height: 497px;
-  width: 100vw;
+  width: 100%;
 
   background-image: url(./assets/img/section-2.png);
   background-size: cover;
@@ -545,7 +572,7 @@ figure {
 
 footer {
   height: 64px;
-  width: 100vw;
+  width: 100%;
 
   background-image: url(./assets/img/footer.png);
   background-size: cover;
