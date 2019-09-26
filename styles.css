@@ -86,9 +86,9 @@ h1 {
   text-align: center;
   color: #ffffff;
   
-  -webkit-box-shadow: 1px 1.732px 0px rgba( 0, 0, 0, 0.42);
-  -moz-box-shadow: 1px 1.732px 0px rgba( 0, 0, 0, 0.42);
-  box-shadow: 1px 1.732px 0px rgba( 0, 0, 0, 0.42);
+  -webkit-text-shadow: 1px 1.732px 0px rgba( 0, 0, 0, 0.42);
+  -moz-text-shadow: 1px 1.732px 0px rgba( 0, 0, 0, 0.42);
+  text-shadow: 1px 1.732px 0px rgba( 0, 0, 0, 0.42);
 }
 
 /* --- Navigation --- */
@@ -245,6 +245,11 @@ nav a:active {
   height: 100%;
 }
 
+.main-video[poster] {
+  object-fit: cover;
+  object-position: -54px 0px;    
+}
+
 /* Video Controls */
 .video-controls {
   position: absolute; 
@@ -260,7 +265,7 @@ nav a:active {
   left: 241px;
 
   height: 67px;
-  width: 68px;
+  width: 67px;
   
   background-color: rgba(245, 197, 6, 0.72);
   background-image: url("./assets/img/play.svg");
@@ -517,6 +522,7 @@ margin-right: 18px;
 }
 
 .video-box {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 656px;
@@ -539,7 +545,19 @@ margin-right: 18px;
 
 .video-box video {
   display: inline-block;
-  margin-top: -1px;  
+}
+
+.video-box .play-big {
+  top: 39.8%;
+  left: 130px;
+
+  height: 61px;
+  width: 61px;
+
+  background-size: 18px 32px;
+  background-position-x: 25px;
+  background-position-y: 14px;
+  background-repeat:no-repeat;
 }
 
 /* Date Box*/
@@ -788,4 +806,61 @@ footer .container {
   -webkit-text-shadow: 1px 1.732px 0px rgba( 0, 0, 0, 0.42);
   -moz-text-shadow: 1px 1.732px 0px rgba( 0, 0, 0, 0.42);
   text-shadow: 1px 1.732px 0px rgba( 0, 0, 0, 0.42);
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+  header{
+    
+  position: static;
+  }
+.top {
+  height: 327px;
+  background-image: none;
+}
+.main-video-overlay {
+  height: 100%;
+  margin: 0;
+  width: 640px;
+}
+.main-video {
+  width: 640px;
+}
+
+header {
+  height: 62px;
+  background: #4c4c4c;
+}
+nav {
+    width: 454px;
+    height: 100%;
+    box-shadow: none;
+    align-self: stretch;;
+}
+
+h1 {
+    font-size: 19px;
+    margin-top: 0px;
+    margin-top: 5px;
+    margin-left: 6px;
+    letter-spacing: 0.5px;
+}
+.logo {
+  height: 40px;
+  width: 40px;
+  margin-top: 0px;
+  margin-left: 12px;
+}
+.video-box {
+  width:100%;
+}
+.button-next {
+  display: none;
+}
+.top h2 {
+  display: none;
+}
+
 }
