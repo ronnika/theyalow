@@ -824,8 +824,18 @@ footer .container {
   margin: 0;
   width: 640px;
 }
+.date-vid-box {
+  display: none;
+}
 .main-video {
   width: 640px;
+}
+.main-video[poster] {
+  object-position: 0 0;
+}
+.video-controls {
+  width: 85.8%;
+  left: 54px;
 }
 
 header {
