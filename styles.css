@@ -807,7 +807,6 @@ footer .container {
   -moz-text-shadow: 1px 1.732px 0px rgba( 0, 0, 0, 0.42);
   text-shadow: 1px 1.732px 0px rgba( 0, 0, 0, 0.42);
 }
-
 @media (max-width: 640px) {
   .container {
     max-width: 640px;
@@ -864,3 +863,4 @@ h1 {
 }
 
 }
+
