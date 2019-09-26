@@ -227,7 +227,9 @@ nav a:active {
 }
 
 /* Video element */
-.main-video-overlay {
+.main-video-overlay {  
+  position: relative;
+
   width: 549px;
   height: 327px;
   margin-top: 97px;
@@ -237,9 +239,99 @@ nav a:active {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+
 .main-video {
   width: 100%;
   height: 100%;
+}
+
+/* Video Controls */
+.video-controls {
+  position: absolute; 
+  bottom: 0;
+  
+  width: 100%;
+  height: 100%;
+}
+
+.play-big {
+  position: absolute;
+  top: 39.8%;
+  left: 241px;
+
+  height: 67px;
+  width: 68px;
+  
+  background-color: rgba(245, 197, 6, 0.72);
+  background-image: url("./assets/img/play.svg");
+  background-position-x: 27px;
+  background-position-y: 17px;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;  
+  border-radius: 50%;
+}
+
+.play-sqr {
+  position: absolute;
+  top: 84.89%;
+  left: 29px;
+  
+  height: 27px;
+  width: 27px;
+  
+  background-color: rgba(245, 197, 6, 0.37);
+  background-image: url("./assets/img/play.svg");
+  background-size: 10px auto;  
+  background-position-x: 10px;
+  background-position-y: 5px;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+}
+
+.progress {
+  position: absolute;
+  top: 87.38%;
+  left: 80px;
+}
+
+.progress .unfill {
+  width: 404px;
+  height: 12px;  
+
+  background-color: rgba(245, 197, 6, 0.28);
+  border:none;
+  -webkit-border--radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;    
+}
+
+.progress .fill {  
+  width: 44.4%;
+  height: 12px;
+
+  background-color:rgba(245, 197, 6, 1); 
+  border-radius: 5px 0px 0px 5px;
+  -moz-border-radius: 5px 0px 0px 5px;
+  -webkit-border-radius: 5px 0px 0px 5px;
+}
+
+.vol {
+  position: absolute;
+  top: 84.89%;
+  top: 87.19%;
+  right: 19px;
+
+  height: 15px;
+  width: 16px;
+  
+  background: transparent;
+  background-image: url("./assets/img/volume.svg");
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+
 }
 
 /* Large heading beside the video */
@@ -270,17 +362,19 @@ margin-right: 18px;
   width: 100%
 }
 
-.button-next div {
+.button-next  button {
   width: 32px;
   height: 57px;
-  background-color: rgba(245, 197, 6, 0.71);;
+  background-color: rgba(245, 197, 6, 0.71);
+  border: none;
 }
 
-.button-next div:hover {
-  background-color: rgba(245, 197, 6, 0.81);;
+.button-next button:hover {
+  background-color: rgba(245, 197, 6, 0.81);
 }
-.button-next div:active {
-  background-color: rgba(245, 197, 6, 1);;
+
+.button-next button:active {
+  background-color: rgba(245, 197, 6, 1);
 }
 
 /* Arrow buttons left / right */
@@ -532,7 +626,7 @@ margin-right: 18px;
 }
 
 /* Slider */
-.slider {
+.slider-temp {
   flex-basis: 100%; 
 }
 
@@ -551,6 +645,38 @@ margin-right: 18px;
   height: 100%;
   background-color: #ec9e03;
   border-radius: 7px;
+}
+
+/* Range Input slider */
+.slider {
+  margin-left: 73px;
+  margin-top: 43px;
+  -webkit-appearance: none;
+  width: 87.8%;
+  height: 15px;
+  border-radius: 7px;  
+  background: rgba(259, 256, 256, 0.48);
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 21.9%;
+  height: 15px;
+  border-radius: 7px; 
+  background: #ec9e03;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 21.9%;
+  height: 15px;
+  border-radius: 7px; 
+  background: #ec9e03;
+  cursor: pointer;
 }
 
 /* --- Grey section with list --- */

@@ -23,12 +23,22 @@
   <main>
     <section class="top">          
     <div class="button-next">
-      <div class="button-next-left"></div>
-      <div class="button-next-right"></div>      
+      <button class="button-next-left"></button>
+      <button class="button-next-right"></button>      
     </div>  
     <div class="container">
       <div class="main-video-overlay">
-          <video class="main-video" src="#" poster="./assets/img/parrots.png" controls></video>
+          <video class="main-video" src="#" poster="./assets/img/parrots.png"></video>          
+          <div class="video-controls">
+              <button class="play-big"></button>              
+              <button class="play-sqr"></button>
+              <div class="progress">
+                 <div class="unfill">
+                    <div class="fill"></div>
+                 </div>    
+              </div>
+              <button class="vol"></button>
+           </div>
       </div>     
       <h2><span class="orange-text">The Cool</span><br><span class="white-text">the Minimal</span></h2>
     </div>
@@ -69,9 +79,8 @@
           <span class="twitter-count">22</span>          
             <div class="plus plus-twitter"></div>
         </div>
-        <div class="slider">
-            <div class="slider-white">              
-              <div class="slider-orange"></div>
+        <div class="slider-temp">
+            <input type="range" class="slider">
             </div>
         </div>      
       </div>      
