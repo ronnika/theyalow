@@ -1,4 +1,4 @@
-/*  */
+/* -- --- FONTS --- ---  */
 @font-face {
   font-family: "Lucida Sans";
   font-style: italic;
@@ -57,7 +57,7 @@
 } 
 
 /* --- Header --- */
-header {
+.header {
   position: absolute; 
   left: 0;
   right: 0;
@@ -74,7 +74,7 @@ header {
   margin-left: -1px;
 }
 
-h1 {
+.logo-h1 {
   margin-left: 3px;  
   margin-top: 38px;
 
@@ -92,7 +92,7 @@ h1 {
 }
 
 /* --- Navigation --- */
-nav {  
+.navigation {  
   display: flex;
   width: 453px;
   height: 41px;    
@@ -105,13 +105,13 @@ nav {
   box-shadow: -4px -5px 0px 0px rgba(231,166,26,0.27), -8px -8px 0px 0px rgba(231,166,26,0.27);
  }
   
-nav ul {
+.navigation-list {
   display: flex;
   width: 100%;
 }
 
- /* Icons for nav buttons */
- .button-about li:before {  
+ /* Icons for .navigation buttons */
+ .button-about li::before {  
   content:"";
   
   position: relative;
@@ -126,7 +126,7 @@ nav ul {
   background-image: url("./assets/img/about.svg");  
 }
 
-.button-services li:before {
+.button-services li::before {
   content:"";
 
   position: relative;
@@ -140,7 +140,7 @@ nav ul {
   background-image: url("./assets/img/services.svg");  
 }
 
-.button-contact li:before {
+.button-contact li::before {
   content:"";
 
   position: relative;
@@ -184,7 +184,7 @@ nav ul {
 }
 
 /* Navbar links */
-nav a {  
+.navigation a {  
   display: flex;
   height: 100%;
   align-items: center;
@@ -202,11 +202,11 @@ nav a {
 }
 
 /* Interactive navbar elements */
-nav a:hover {
+.navigation a:hover {
   background-color: rgba(0,0,0,0.05);
 }
 
-nav a:active {  
+.navigation a:active {  
   background-color: rgba(0,0,0,0.11);
 }
 
@@ -340,7 +340,7 @@ nav a:active {
 }
 
 /* Large heading beside the video */
-h2 {  
+.video-heading {  
   margin-top: 67px;
   font-family: "Asap", "Tahoma", sans-serif;
   font-size: 63px;
@@ -434,7 +434,7 @@ margin-right: 18px;
   text-align: center;
   text-transform: uppercase;
 
-  border-left: 1px solid rgba( 0, 0, 0, 0.14); /* Add vertical lines between navbar sections */
+  border-left: 1px solid rgba( 0, 0, 0, 0.14); /* Add vertical lines between .navigationbar sections */
 }
 
 .icon-free {
@@ -500,17 +500,18 @@ margin-right: 18px;
   box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.26);
 }
 
-.yellow-section h2 {
+.yellow-heading {
   flex-basis: 100%;
-  height: 93px;
+  height: 73px;
   justify-self: flex-start;
   text-align: left;
-  margin-top: 17px;
-  float: left;
+  margin-top: 37px;
+
+  font-family: "PT Sans", "Tahoma", sans-serif;  
   font-size: 37px;
   letter-spacing: 0.4px;
+  text-transform: uppercase;
   color: #ffffff;
-  font-family: "PT Sans", "Tahoma", sans-serif;  
 }
 
 /* Left box with date */
@@ -716,10 +717,15 @@ figure {
   display: block;
   float: left;
 }
+
 .computer {
   margin-top: -2px;
   margin-top: -9px;
   margin-left: -3px;  
+}
+
+.computer-mob {
+  display: none;
 }
 
 .tablet {
@@ -733,14 +739,17 @@ figure {
 }
 
 /* List */
-.grey-section h2 {
+.grey-heading {
   width: 100%;
-  margin-top: 26px;
-  margin-left: 2px;
+  margin-top: 42px;
+  margin-bottom: 17px;
+  margin-left: 3px;
+  text-align: center; 
 
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 43px;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
   color: #f5c506;
 }
 
@@ -771,11 +780,11 @@ figure {
 }
 
 /*  --- Footer with Logo --- */
-footer {
+.footer {
   height: 64px;
   width: 100%;
 
-  background-image: url(./assets/img/footer.png);
+  background-image: url(./assets/img/.footer.png);
   background-size: cover;
   background-repeat: no-repeat;  
 
@@ -784,7 +793,7 @@ footer {
   box-shadow: 0px -2px 3px 0px rgba(0, 0, 0, 1);
 }
 
-footer .container {
+.footer .container {
   display: flex;
   align-items: center;
 }
@@ -818,21 +827,21 @@ footer .container {
   max-width: 640px;
 }
 
-header {    
+.header {    
   position: static;
   height: 62px;
 
   background: #4c4c4c;
 }
 
-nav {
+.navigation {
     width: 454px;
     height: 100%;
     box-shadow: none;
     align-self: stretch;
 }
 
-h1 {
+.logo-h1 {
     font-size: 19px;
     margin-top: 0px;
     margin-top: 5px;
@@ -857,7 +866,7 @@ h1 {
   display: none;
 }
 
-.top h2 {
+.video-heading {
   display: none;
 }
 
@@ -1011,17 +1020,19 @@ h1 {
 .twitter-bubble {
   width: 285px;
   height: 43px;
-  margin-right: 30px;
+  margin-right: 32px;
   margin-bottom: 13px;
   background-image: url("./assets/img/bub.svg");
 }
 
 .twitter-bubble:nth-child(2) {
-  opacity: 0.7;
+  background-image: linear-gradient(rgba(245, 197, 7, 0.3), rgba(245, 197, 7, 0.3)),  url("./assets/img/bub.svg");
+
 }
 
 .twitter-bubble:nth-child(3) {
-  opacity: 0.6;
+  background-image: linear-gradient(rgba(245, 197, 7, 0.4), rgba(245, 197, 7, 0.4)),  url("./assets/img/bub.svg");
+
 }
 
 .twitter-box form {
@@ -1056,13 +1067,22 @@ h1 {
   display: none;
 }
 
+.twitter-text {
+  padding-top: 8px;
+  padding-left: 29px;
+
+  font-family: "Arial";
+  font-size: 13px;
+  letter-spacing: 0.13px;
+  line-height: 15px;
+  color: #8f8e8e;
+}
+
 .plus-twitter {
   display: none;
 }
 
-
-
-.yellow-section h2 {
+.yellow-heading {
   display: none;
 }
 
@@ -1074,9 +1094,10 @@ h1 {
   height: 469px;
 }
 
-.grey-section h2 {
+.grey-heading  {
   text-align: left;
-  margin-top: 21px;
+  margin-top: 39px;
+  margin-bottom: 20px;
   margin-left: 18px;
     
   font-size: 39px;
@@ -1088,14 +1109,20 @@ h1 {
 }
 
 .computer {
-  margin-top: 16px;
-  margin-left: 36px;
+  display: none;
 }
+
+.computer-mob {
+  display: inline-block;
+  margin-top: 17px;
+  margin-left: 26px;
+}
+
 .grey-section ul {
   display: none;
 }
 
-footer {
+.footer {
   height: 41px;
 }
 .footer-logo+h3 {
@@ -1104,13 +1131,15 @@ footer {
   
   margin-left: 8px;
 }
+
 .footer-logo {
   height: 32px;
   width: 32px;
   margin-top: 4px;
   margin-left: 0px;
 }
-footer .container {
+
+.footer .container {
   padding-left: 64px;
 }
 }
