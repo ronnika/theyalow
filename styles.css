@@ -979,8 +979,9 @@ figure {
   margin-top: -1px;
 }
 
-.date-vid-box .video-controls {
-  display: none;
+.date-vid-box .play-big {
+  left: 393px;
+  top: 103px;
 }
 
 .date-box {
