@@ -784,7 +784,7 @@ figure {
   height: 64px;
   width: 100%;
 
-  background-image: url(./assets/img/.footer.png);
+  background-image: url(./assets/img/footer.png);
   background-size: cover;
   background-repeat: no-repeat;  
 
@@ -904,6 +904,13 @@ figure {
   height: 327px;
 
   background-image: none;
+
+  -webkit-box-shadow: inset 0px -4px 0px 0px rgba( 255, 255, 255, 0.4), 
+                      inset 0px -9px 0px 0px rgba( 255, 255, 255, 0.4);
+  -moz-box-shadow: inset 0px -4px 0px 0px rgba( 255, 255, 255, 0.4),
+                   inset 0px -9px 0px 0px rgba( 255, 255, 255, 0.4);
+  box-shadow: inset 0px -4px 0px 0px rgba( 255, 255, 255, 0.4),
+              inset 0px -9px 0px 0px rgba( 255, 255, 255, 0.4);
 }
 
 .button-next {
@@ -935,6 +942,12 @@ figure {
 .icon-area {
   height: 170px;
   box-sizing: border-box;
+
+  background-image: url("./assets/img/icon-section-mob.png");
+
+  -webkit-box-shadow: inset 0px -5px 0px 0px rgba( 255, 255, 255, 0.4);
+  -moz-box-shadow: inset 0px -5px 0px 0px rgba( 255, 255, 255, 0.4);
+  box-shadow: inset 0px -5px 0px 0px rgba( 255, 255, 255, 0.4);
 }
 
 .icon-area .container {
@@ -946,6 +959,7 @@ figure {
 .icon-free {
   font-size: 23px;
   background-image: none;
+  border: 0;
 }
 
 .icon-design img {
@@ -1083,9 +1097,9 @@ figure {
 .twitter-box form {
   position: relative;
   box-sizing: border-box;
-  width: 271px;
-  height: 28px;
-  margin-left: 11px;
+  width: 270px;
+  height: 26px;
+  margin-left: 14px;
 }
 
 .twitter-box-input {
@@ -1094,20 +1108,42 @@ figure {
   margin-bottom: 11px;
   border-radius: 10px;
   border: 1px solid rgba(0,0,0,0.15);
+
+  -webkit-box-shadow: inset 4px 4px 5px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: inset 4px 4px 5px 0px rgba(0,0,0,0.1);
+  box-shadow: inset 4px 4px 5px 0px rgba(0,0,0,0.1);
 }
 
 .twitter-button {
   position: absolute;
-  right: 0;
-  top: 3px;
-  height: 100%;
-  width: 69px;
-  border: none;
+  right:-2px;
+  top: 0px;
+  height: 30px;
+  width: 71px;
+  padding-left: 13px;
+
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "Arial";
+  text-align: left;
+
+  border: 0;
   background-color: #ec9e03;
   border-radius: 0px 10px 10px 0px;
   -moz-border-radius: 0px 10px 10px 0px;
   -webkit-border-radius: 0px 10px 10px 0px;
+
+  background: -moz-linear-gradient(top, rgba(236,158,3,1) 0%, rgba(208,142,12,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(236,158,3,1)), color-stop(100%, rgba(208,142,12,1)));
+  background: -webkit-linear-gradient(top, rgba(236,158,3,1) 0%, rgba(208,142,12,1) 100%);
+  background: -o-linear-gradient(top, rgba(236,158,3,1) 0%, rgba(208,142,12,1) 100%);
+  background: -ms-linear-gradient(top, rgba(236,158,3,1) 0%, rgba(208,142,12,1) 100%);
+  background: linear-gradient(to bottom, rgba(236,158,3,1) 0%, rgba(208,142,12,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec9e03', endColorstr='#d08e0c', GradientType=0 );
 }
+
+
 .twitter-count {
   display: none;
 }
@@ -1170,6 +1206,7 @@ figure {
 .footer {
   height: 41px;
 }
+
 .footer-logo+h3 {
   font-size: 17px;
   letter-spacing: 0px;
