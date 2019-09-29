@@ -1117,16 +1117,16 @@ figure {
   height: 43px;
   margin-right: 32px;
   margin-bottom: 13px;
-  background-image: url("./assets/img/bub.svg");
+  background-image: url("./assets/img/bub.png");
 }
 
 .twitter-bubble:nth-child(2) {
-  background-image: linear-gradient(rgba(245, 197, 7, 0.3), rgba(245, 197, 7, 0.3)),  url("./assets/img/bub.svg");
+  background-image: linear-gradient(rgba(245, 197, 7, 0.3), rgba(245, 197, 7, 0.3)),  url("./assets/img/bub.png");
 
 }
 
 .twitter-bubble:nth-child(3) {
-  background-image: linear-gradient(rgba(245, 197, 7, 0.4), rgba(245, 197, 7, 0.4)),  url("./assets/img/bub.svg");
+  background-image: linear-gradient(rgba(245, 197, 7, 0.4), rgba(245, 197, 7, 0.4)),  url("./assets/img/bub.png");
 
 }
 
@@ -1152,10 +1152,10 @@ figure {
 
 .twitter-button {
   position: absolute;
-  right:-2px;
+  right: -3px;
   top: 0px;
   height: 30px;
-  width: 71px;
+  width: 72px;
   padding-left: 13px;
 
   font-size: 15px;
