@@ -269,8 +269,7 @@
   
   background-color: rgba(245, 197, 6, 0.72);
   background-image: url("./assets/img/play.svg");
-  background-position-x: 27px;
-  background-position-y: 17px;
+  background-position: 27px 17px;
   background-repeat:no-repeat;
   border: none;
   cursor:pointer;  
@@ -288,8 +287,7 @@
   background-color: rgba(245, 197, 6, 0.37);
   background-image: url("./assets/img/play.svg");
   background-size: 10px auto;  
-  background-position-x: 10px;
-  background-position-y: 5px;
+  background-position: 10px 5px;
   background-repeat:no-repeat;
   border: none;
   cursor:pointer;
@@ -556,8 +554,7 @@ margin-right: 18px;
   width: 61px;
 
   background-size: 18px 32px;
-  background-position-x: 25px;
-  background-position-y: 14px;
+  background-position: 25px 14px;
   background-repeat:no-repeat;
 }
 
@@ -603,8 +600,7 @@ margin-right: 18px;
   background-color: #ec9e03;
   background-image: url("./assets/img/twitter.svg");
   background-repeat: no-repeat;
-  background-position-y: 59%;
-  background-position-x: 49%;  
+  background-position: 49% 59%;  
 }
 
 .twitter-count {
