@@ -647,6 +647,7 @@ margin-right: 18px;
 
 .plus:hover,
 .plus:active {
+  cursor: pointer;
   background-image: url("./assets/img/plus.svg"),url("./assets/img/plus.svg");
 }
 
@@ -1072,6 +1073,10 @@ figure {
 .video-overlay {
   width: 314px;
   margin-top: -1px;
+}
+.date-vid-box .video-controls {
+  width: 200px;
+  right: 54px;
 }
 
 .date-vid-box .play-big {
