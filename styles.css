@@ -939,15 +939,24 @@ figure {
   margin-top: -1px;  
 }
 
+.progress {
+  top: 87.6%;
+}
+
 .icon-area {
+  position: relative;
   height: 170px;
   box-sizing: border-box;
+  z-index: 10;
 
   background-image: url("./assets/img/icon-section-mob.png");
 
-  -webkit-box-shadow: inset 0px -5px 0px 0px rgba( 255, 255, 255, 0.4);
-  -moz-box-shadow: inset 0px -5px 0px 0px rgba( 255, 255, 255, 0.4);
-  box-shadow: inset 0px -5px 0px 0px rgba( 255, 255, 255, 0.4);
+  -webkit-box-shadow: inset 0px -5px 0px 0px rgba( 255, 255, 255, 0.4), 
+  0px -4px 0px 0px rgba( 255, 255, 255, 0.4), 0px -9px 0px 0px rgba( 255, 255, 255, 0.4);
+  -moz-box-shadow: inset 0px -5px 0px 0px rgba( 255, 255, 255, 0.4), 
+  0px -4px 0px 0px rgba( 255, 255, 255, 0.4), 0px -9px 0px 0px rgba( 255, 255, 255, 0.4);
+  box-shadow: inset 0px -5px 0px 0px rgba( 255, 255, 255, 0.4), 
+  0px -4px 0px 0px rgba( 255, 255, 255, 0.4), 0px -9px 0px 0px rgba( 255, 255, 255, 0.4);
 }
 
 .icon-area .container {
