@@ -1081,8 +1081,7 @@ figure {
   
   background-image: url("./assets/img/twitter.svg");
   
-  background-position-y: 58%;
-  background-position-x: 17.2%;
+  background-position: 17.2% 58%;
 }
 
 .twitter-box .tweets {
